@@ -46,3 +46,9 @@ import loginNotValid from '../support/pageobject/loginGagal';
 Cypress.Commands.add('loginNotValid', (email, password) => {
  loginNotValid.loginFailed(email, password);
 })
+
+import checkoutLogin from '../support/pageobject/checkoutWhiteLogin'
+// Checkout Produk dengan kondisi login
+Cypress.Commands.add('checkoutLogin', () => {
+  checkoutLogin.checkoutLog();
+})
