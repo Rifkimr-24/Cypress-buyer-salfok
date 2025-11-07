@@ -1,7 +1,7 @@
-const checkoutLogin = require ('../support/pageobject/checkoutWhiteLogin');
+const checkoutLogin = require('../support/pageobject/checkoutWhiteLogin');
 
-describe ('Checkout', () => {
-    it('Success checkout dengan login', () => {
-    cy.checkoutLogin();
-    });
-});
+describe ('Checkout Page', () => {
+    it('success checkout produk', () => {
+        cy.checkoutLogin();
+    })
+})
